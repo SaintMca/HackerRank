@@ -1,13 +1,53 @@
-﻿using System;
+﻿using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
 using System.Text;
-using System.Threading.Tasks;
+using System;
+
 
 namespace HackerRank
 {
     class _2DArray
     {
+        // Complete the hourglassSum function below.
+        static int hourglassSum(int[][] arr)
+        {
+            Console.Write(arr);
+
+            return 0;
+
+        }
+
+        static void Main(string[] args)
+        {
+            //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+           
+
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+            //}
+
+            int[,] arr = new int[,] { { 1, 1, 1, 0, 0, 0 }, { 0, 1, 0, 0, 0, 0 }, { 1, 1, 1, 0, 0, 0 }, { 0, 0, 2, 4, 4, 0 }, { 0, 0, 0, 2, 0, 0 }, { 0, 0, 1, 2, 4, 0 } };
+            
+                   
+
+            int result = hourglassSum(arr);
+
+           // textWriter.WriteLine(result);
+           // textWriter.Flush();
+           // textWriter.Close();
+        }
+
     }
 }
 
