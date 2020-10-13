@@ -21,7 +21,7 @@
 
 using System;
 
-namespace HackerRank.SolveMeFirst
+namespace HackerRank.Algorithms.Warmup.SolveMeFirst
 {
     class SolveMeFirst
     {
