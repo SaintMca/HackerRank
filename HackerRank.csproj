@@ -47,6 +47,8 @@
     <Compile Include="Algorithms\Warmup\Birthday Cake Candles\BirthdayCakeCandles.cs" />
     <Compile Include="Algorithms\Warmup\CompareTheTriplets\CompareTheTriplets.cs" />
     <Compile Include="Algorithms\Warmup\Diagonal Difference\DiagonalDifference.cs" />
+    <Compile Include="Algorithms\Warmup\Mini-Max Sum\MiniMaxSum.cs" />
+    <Compile Include="Algorithms\Warmup\Plus Minus\PlusMinus.cs" />
     <Compile Include="Algorithms\Warmup\SimpleArraySum\SimpleArraySum.cs" />
     <Compile Include="Algorithms\Warmup\SolveMeFirst\SolveMeFirst.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
