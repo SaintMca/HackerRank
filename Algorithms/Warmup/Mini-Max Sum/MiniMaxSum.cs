@@ -5,6 +5,7 @@
     Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 */
 
+using System;
 using static System.Console;
 
 class MiniMaxSum
@@ -16,9 +17,13 @@ class MiniMaxSum
         for (int i = 0; i < integers.Length; i++)
         {
             numbers[i] = long.Parse(integers[i]);
-        }  //We could use LINQ for this       
+        }  //We could use LINQ for this 
 
+        miniMaxSum(numbers);
+    }
 
+    static void miniMaxSum(long[] numbers)
+    {
         var sumOfAllNumbers = 0L;  //In question it says LongInt
         var minimum = long.MaxValue; //MaxValue ==> at 1st Compare, the value must be smaller than this.
         var maximum = 0L;
@@ -34,5 +39,6 @@ class MiniMaxSum
 
         }
         Console.WriteLine(string.Format("{0} {1}", sumOfAllNumbers - maximum, sumOfAllNumbers - minimum));
+
     }
 }

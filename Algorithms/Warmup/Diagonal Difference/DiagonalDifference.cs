@@ -4,23 +4,69 @@
 
 using System;
 using static System.Console;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+
 
 class DiagonalDifference
 {
     static void Main(string[] args)
     {
+        #region Given Part
+        int nOfRows = Convert.ToInt32(Console.ReadLine().Trim()); 
+
+        List<List<int>> arr = new List<List<int>>();
+
+        for (int i = 0; i < nOfRows; i++)
+        {
+            arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
+        }
+
+        int result = Result.diagonalDifference(arr, nOfRows);
+
+        Console.WriteLine(result);
+        ReadLine();
+        #endregion
+        
+    }
+}
+
+class Result
+{
+    /*
+     * Complete the 'diagonalDifference' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts 2D_INTEGER_ARRAY arr as parameter.
+     */
+    public static int diagonalDifference(List<List<int>> arr, int nOfRows)
+    {
         var sumOfFirstDiagonal = 0;
         var sumOfSecondDiagonal = 0;
 
-        var nOfRows = int.Parse(ReadLine());
+        int k = 0;
+       
+            for (int i = 0, j = nOfRows - 1; i < nOfRows; i++, j--)
+            {
 
-        for (int i = 0, j = nOfRows - 1; i < nOfRows; i++, j--)
-        {
-            var arr = ReadLine().Split(','); //Read rows
-            var newRow = Array.ConvertAll(arr, int.Parse);
-            sumOfFirstDiagonal += newRow[i];
-            sumOfSecondDiagonal += newRow[j];
-        }
-        Console.WriteLine(Math.Abs(sumOfFirstDiagonal - sumOfSecondDiagonal));
+                sumOfFirstDiagonal += arr[k][i];
+                sumOfSecondDiagonal += arr[k][j];
+            if (k < nOfRows)
+                k += 1;
+            else
+                break;
+            }
+        
+        return Math.Abs(sumOfFirstDiagonal - sumOfSecondDiagonal);
     }
 }

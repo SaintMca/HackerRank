@@ -60,12 +60,12 @@ namespace HackerRank.Algorithms.Warmup.CompareTheTriplets
     {
         static void Main(string[] args)
         {
-            var Alice = Console.ReadLine().Split(' ');
+            var Alice = Console.Console.ReadLine().Split(' ');
             var a0 = int.Parse(Alice[0]);
             var a1 = int.Parse(Alice[1]);
             var a2 = int.Parse(Alice[2]);
 
-            var Bob = Console.ReadLine().Split(' ');
+            var Bob = Console.Console.ReadLine().Split(' ');
             var b0 = int.Parse(Bob[0]);
             var b1 = int.Parse(Bob[1]);
             var b2 = int.Parse(Bob[2]);
@@ -88,7 +88,7 @@ namespace HackerRank.Algorithms.Warmup.CompareTheTriplets
             else if (b2 > a2)
                 bobTotalScore++;
 
-            Console.Console.WriteLine(aliceTotalScore + " " + bobTotalScore);
+            Console.WriteLine(aliceTotalScore + " " + bobTotalScore);
         }
     }
 }

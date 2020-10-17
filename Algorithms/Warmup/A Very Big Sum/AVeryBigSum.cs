@@ -47,7 +47,7 @@ class AVeryBigSum
         for (int i = 0; i < n; i++)
             sum += arr[i];
 
-        Console.Console.WriteLine(sum);
+        Console.WriteLine(sum);
     }
 
     private static long[] ArrayHelper()

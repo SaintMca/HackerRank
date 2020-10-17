@@ -44,7 +44,8 @@ class BirthdayCakeCandles
 {
     static void Main(String[] args)
     {
-        var candleArray = ReadLine().Split(',');
+        int candlesCount = Convert.ToInt32(Console.ReadLine().Trim());
+        var candleArray = Console.ReadLine().Split(' ');
         var heightsOfCandles = Array.ConvertAll(candleArray, int.Parse);
         var maxValue = heightsOfCandles[0];
         var maxValueOccurence = 1;
@@ -66,6 +67,9 @@ class BirthdayCakeCandles
         #endregion
 
         Console.WriteLine(maxValueOccurence);
-        ReadLine();
+        Console.ReadLine();
     }
 }
+
+
+
