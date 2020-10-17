@@ -5,3 +5,4 @@ C:\Users\MCA\Desktop\ABC\HackerRank\HackerRank\bin\Debug\HackerRank.pdb
 C:\Users\MCA\Desktop\ABC\HackerRank\HackerRank\obj\Debug\HackerRank.csproj.CoreCompileInputs.cache
 C:\Users\MCA\Desktop\ABC\HackerRank\HackerRank\obj\Debug\HackerRank.exe
 C:\Users\MCA\Desktop\ABC\HackerRank\HackerRank\obj\Debug\HackerRank.pdb
+C:\Users\MCA\Desktop\ABC\HackerRank\HackerRank\obj\Debug\HackerRank.csprojAssemblyReference.cache
