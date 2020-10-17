@@ -14,12 +14,19 @@ class PlusMinus
 {
     static void Main(String[] args)
     {
+        #region Given part by HackerRank
+        int n = Convert.ToInt32(Console.ReadLine());
+        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+        plusMinus(arr);
+        #endregion          
+    }
+
+    static void plusMinus(int[] arr)
+    {
         var positiveNumbers = 0;
         var negativeNumbers = 0;
         var zeroNumbers = 0;
-        
-        var temp_arr = ReadLine().Split(',');
-        var arr = Array.ConvertAll(temp_arr, Int32.Parse);
+
 
         for (int i = 0; i < arr.Length; i++)
         {
@@ -31,9 +38,10 @@ class PlusMinus
                 ++zeroNumbers;
         }
 
-        WriteLine((double)positiveNumbers / arr.Length);  //We use double here because of explanation "The test cases are scaled to six decimal places" 
-        WriteLine((double)negativeNumbers / arr.Length);
-        WriteLine((double)zeroNumbers / arr.Length);
+        Console.WriteLine((double)positiveNumbers / arr.Length);
+        Console.WriteLine((double)negativeNumbers / arr.Length);
+        Console.WriteLine((double)zeroNumbers / arr.Length);
         ReadLine();
-    }
+
+    }   
 }

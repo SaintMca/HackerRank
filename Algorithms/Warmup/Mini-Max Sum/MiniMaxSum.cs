@@ -33,6 +33,6 @@ class MiniMaxSum
                 maximum = numbers[j];
 
         }
-        WriteLine(string.Format("{0} {1}", sumOfAllNumbers - maximum, sumOfAllNumbers - minimum));
+        Console.WriteLine(string.Format("{0} {1}", sumOfAllNumbers - maximum, sumOfAllNumbers - minimum));
     }
 }

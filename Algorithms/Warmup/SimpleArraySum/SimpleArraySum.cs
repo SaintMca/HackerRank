@@ -48,7 +48,7 @@ namespace HackerRank.Algorithms.Warmup.SimpleArraySum
             Console.ReadLine();
             var temp_arr = Console.ReadLine().Split(' ');
             var arr = Array.ConvertAll(temp_arr, int.Parse); //To be sure that all elements of Array is Integer
-            Console.WriteLine(arr.Sum()); //This Sum method is O(n) time complexity ( LINQ )
+            Console.Console.WriteLine(arr.Sum()); //This Sum method is O(n) time complexity ( LINQ )
         }
     }
 }

@@ -88,7 +88,7 @@ namespace HackerRank.Algorithms.Warmup.CompareTheTriplets
             else if (b2 > a2)
                 bobTotalScore++;
 
-            Console.WriteLine(aliceTotalScore + " " + bobTotalScore);
+            Console.Console.WriteLine(aliceTotalScore + " " + bobTotalScore);
         }
     }
 }

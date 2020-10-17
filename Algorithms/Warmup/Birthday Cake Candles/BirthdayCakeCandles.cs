@@ -65,7 +65,7 @@ class BirthdayCakeCandles
         }
         #endregion
 
-        WriteLine(maxValueOccurence);
+        Console.WriteLine(maxValueOccurence);
         ReadLine();
     }
 }

@@ -21,6 +21,6 @@ class DiagonalDifference
             sumOfFirstDiagonal += newRow[i];
             sumOfSecondDiagonal += newRow[j];
         }
-        WriteLine(Math.Abs(sumOfFirstDiagonal - sumOfSecondDiagonal));
+        Console.WriteLine(Math.Abs(sumOfFirstDiagonal - sumOfSecondDiagonal));
     }
 }
